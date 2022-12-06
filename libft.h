@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 17:22:41 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/12/06 19:09:17 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/12/06 19:16:11 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ char	*gnl_strjoin(char *s1, char *s2);
 char	*reader(int fd, char *hold);
 char	*cleaner(char *hold);
 char	*garbage_collector(char *hold);
+char	*get_next_line(int fd);
 //==================GNL=END====================//
 
 typedef struct s_list
