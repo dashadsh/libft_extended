@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 17:22:41 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/12/06 19:16:11 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2022/12/06 23:48:14 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,10 @@
 # include <stdio.h> 
 /* library for open*/
 # include <fcntl.h>
+/* library for ft_printf*/
+# include <stdarg.h>
 
+//==================LIBFT=FUNC=======================//
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
@@ -63,17 +66,9 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+//==================LIBFT=FUNC=END======================//
 
-//==================GNL========================//
-size_t	gnl_strlen(const char *s);
-char	*gnl_newline_found(char *s);
-char	*gnl_strjoin(char *s1, char *s2);
-char	*reader(int fd, char *hold);
-char	*cleaner(char *hold);
-char	*garbage_collector(char *hold);
-char	*get_next_line(int fd);
-//==================GNL=END====================//
-
+//==================LIBFT=FUNC=BONUS======================//
 typedef struct s_list
 {
 	void			*content;
@@ -90,5 +85,30 @@ void			ft_lstadd_front(t_list **lst, t_list *new);
 void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(void*));
 int				ft_lstsize(t_list *lst);
+//==================LIBFT=FUNC=BONUS=END=====================//
 
+//==================GNL=FUNC=======================//
+size_t	gnl_strlen(const char *s);
+char	*gnl_newline_found(char *s);
+char	*gnl_strjoin(char *s1, char *s2);
+
+char	*reader(int fd, char *hold);
+char	*cleaner(char *hold);
+char	*garbage_collector(char *hold);
+char	*get_next_line(int fd);
+//==================GNL=FUNC=END====================//
+
+//===============FT_PRINTF=FUNC====================//
+int		ft_write_char(char c);
+int		ft_write_str(char *str);
+int		ft_write_nbr(int n);
+int		ft_write_unsigned_int(unsigned int n);
+int		ft_write_ptr(unsigned long int n);
+int		ft_write_hex(unsigned int n);
+int		ft_write_hex_upper(unsigned int n);
+
+int		format(va_list *ap, char c);
+
+int		ft_printf(const char *s, ...);
+//===============FT_PRINTF=FUNC=END===================//
 #endif
