@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 15:19:51 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/05/25 10:16:07 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2023/01/15 18:02:02 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,23 @@ Returns the original value of dst
 */
 
 #include "libft.h"
+
+/*
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	if (!dst && !src)
+		return (NULL);
+	while (i < n)
+	{
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+		i++;
+	}
+	return (dst);
+}
+*/
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

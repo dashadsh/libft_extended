@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/03 18:00:32 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/05/30 19:53:36 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2023/01/15 18:04:14 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,23 @@ The pointer may subsequently be used as an argument to the function free(3).
 */
 
 #include "libft.h"
+
+/*
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	if (!dst && !src)
+		return (NULL);
+	while (i < n)
+	{
+		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+		i++;
+	}
+	return (dst);
+}
+*/
 
 char	*ft_strdup(const char *s1)
 {

@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/30 16:25:12 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/11/28 22:48:53 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2023/01/15 18:03:34 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,6 @@ char	*ft_write_words(const char *str, char c)
 
 /*
 1. count words using ft_word_counter + allocate memory for that
-2. 
 */
 char	**ft_split(char const *s, char c)
 {

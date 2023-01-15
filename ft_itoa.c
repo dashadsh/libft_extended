@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 12:04:20 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/05/25 18:20:08 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2023/01/15 18:00:05 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,17 +23,17 @@ NULL if the allocation fails.
 
 int	counter(long n)
 {
-	int	index;
+	int	i;
 
-	index = 0;
+	i = 0;
 	if (n <= 0)
-		index = 1;
+		i = 1;
 	while (n)
 	{
 		n /= 10;
-		index++;
+		i++;
 	}
-	return (index);
+	return (i);
 }
 
 char	*ft_itoa(int n)
