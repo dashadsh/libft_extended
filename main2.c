@@ -12,27 +12,27 @@ if we ask to open a file that doesn’t exist, or a file we don’t have
 the permission to open, fd is equal to -1
 */
 
-#include "libft.h"
+// #include "libft.h"
 
-int	main(int argc, char **argv)
-{
-	int	fd;
-	char	*line;
+// int	main(int argc, char **argv)
+// {
+// 	int	fd;
+// 	char	*line;
 
-// Casting argc to quiet the compiler's warnings.
-	(void)argc;
-// Open the file given as an argument at program launch
-	fd = open(argv[1], O_RDONLY);
-// Initialize this variable to be able to use it in the following loop
-	line = "";
-	while (line != NULL)
-	{
-		line = get_next_line(fd);
-		printf("%s", line);
-	}
-	fd = close(fd);
-	return (0);
-}
+// // Casting argc to quiet the compiler's warnings.
+// 	(void)argc;
+// // Open the file given as an argument at program launch
+// 	fd = open(argv[1], O_RDONLY);
+// // Initialize this variable to be able to use it in the following loop
+// 	line = "";
+// 	while (line != NULL)
+// 	{
+// 		line = get_next_line(fd);
+// 		printf("%s", line);
+// 	}
+// 	fd = close(fd);
+// 	return (0);
+// }
 
 /* 
 when we are done manipulating a file, we must de-reference the file descriptor 

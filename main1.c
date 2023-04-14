@@ -1,3 +1,4 @@
+
 // >>>>>>>>>>>>>>>>>>>>atoi<<<<<<<<<<<<<<<<<<<<
 
 // #include <stdio.h>
@@ -27,7 +28,7 @@
 // {
 // 	char	origin[11] = "xxxxxOOOOO";
 // 	char	custom[11] = "xxxxxOOOOO";
-	
+
 // 	bzero(origin, 2);
 // 	ft_bzero(custom, 2);
 	

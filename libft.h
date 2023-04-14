@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 17:22:41 by dgoremyk          #+#    #+#             */
-/*   Updated: 2022/12/06 23:48:14 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2023/04/14 11:24:07 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char			**ft_split(const char *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
+void			ft_strncat(char *dest, char *src, int n);
+void			ft_strncpy(char *dest, const char *src, size_t n);
 char			*ft_strnstr(const char *str, const char *needle, size_t len);
 char			*ft_strdup(const char *s1);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
@@ -88,27 +90,27 @@ int				ft_lstsize(t_list *lst);
 //==================LIBFT=FUNC=BONUS=END=====================//
 
 //==================GNL=FUNC=======================//
-size_t	gnl_strlen(const char *s);
-char	*gnl_newline_found(char *s);
-char	*gnl_strjoin(char *s1, char *s2);
+size_t			gnl_strlen(const char *s);
+char			*gnl_newline_found(char *s);
+char			*gnl_strjoin(char *s1, char *s2);
 
-char	*reader(int fd, char *hold);
-char	*cleaner(char *hold);
-char	*garbage_collector(char *hold);
-char	*get_next_line(int fd);
+char			*reader(int fd, char *hold);
+char			*cleaner(char *hold);
+char			*garbage_collector(char *hold);
+char			*get_next_line(int fd);
 //==================GNL=FUNC=END====================//
 
 //===============FT_PRINTF=FUNC====================//
-int		ft_write_char(char c);
-int		ft_write_str(char *str);
-int		ft_write_nbr(int n);
-int		ft_write_unsigned_int(unsigned int n);
-int		ft_write_ptr(unsigned long int n);
-int		ft_write_hex(unsigned int n);
-int		ft_write_hex_upper(unsigned int n);
+int				ft_write_char(char c);
+int				ft_write_str(char *str);
+int				ft_write_nbr(int n);
+int				ft_write_unsigned_int(unsigned int n);
+int				ft_write_ptr(unsigned long int n);
+int				ft_write_hex(unsigned int n);
+int				ft_write_hex_upper(unsigned int n);
 
-int		format(va_list *ap, char c);
+int				format(va_list *ap, char c);
 
-int		ft_printf(const char *s, ...);
+int				ft_printf(const char *s, ...);
 //===============FT_PRINTF=FUNC=END===================//
 #endif

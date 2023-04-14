@@ -6,9 +6,11 @@
 #    By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/17 17:22:34 by dgoremyk          #+#    #+#              #
-#    Updated: 2022/12/06 23:57:19 by dgoremyk         ###   ########.fr        #
+#    Updated: 2023/04/14 11:26:53 by dgoremyk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+.SILENT:
 
 NAME = libft.a
 
@@ -19,7 +21,7 @@ CFLAGS = -Wall -Werror -Wextra -g
 RM = rm -f
 
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
-			ft_strlen.c \
+			ft_strlen.c ft_strcpy.c ft_strncat.c ft_strncpy.c \
 			ft_memset.c ft_bzero.c \
 			ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c \
 			ft_tolower.c ft_toupper.c \

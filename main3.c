@@ -1,10 +1,11 @@
-#include "libft.h"
 
-// gcc main3.c ./libft.a
+// #include "libft.h"
 
-int main()
-{
-	int i = 14;
+// // gcc main3.c ./libft.a
 
-	ft_printf("%d\n", i);
-}
+// int main()
+// {
+// 	int i = 14;
+
+// 	ft_printf("%d\n", i);
+// }
