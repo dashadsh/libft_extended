@@ -6,7 +6,7 @@
 /*   By: dgoremyk <dgoremyk@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 17:22:41 by dgoremyk          #+#    #+#             */
-/*   Updated: 2023/04/14 11:24:07 by dgoremyk         ###   ########.fr       */
+/*   Updated: 2023/04/14 11:51:44 by dgoremyk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
+char			*ft_strcpy(char *dest, const char *src);
 //==================LIBFT=FUNC=END======================//
 
 //==================LIBFT=FUNC=BONUS======================//
